@@ -8,7 +8,7 @@
 #include <WiFiClientSecureBearSSL.h>
 
 // Fingerprint for demo URL, expires on June 2, 2021, needs to be updated well before this date
-const uint8_t fingerprint[20] = {0x23, 0x75, 0x5E, 0x3D, 0xEA, 0x9F, 0xA0, 0x42, 0x86, 0x8D, 0x14, 0xAE, 0x43, 0x04, 0xF0, 0xB2, 0x91, 0x0B, 0xDA, 0xCF};
+const uint8_t fingerprint[20] = {0x99, 0x1A, 0xE6, 0xC6, 0x9B, 0x04, 0x87, 0x74, 0xE3, 0xDA, 0x97, 0xC8, 0x29, 0x09, 0x15, 0x16, 0xCF, 0x1F, 0x6A, 0x78};
 // 4a 2e b2 a8 29 12 9a ca ac e1 e0 f4 a0 6c 74 4b 4b 7d 5b ab
 
 #define RST_PIN  D3     // Configurable, see typical pin layout above
@@ -51,7 +51,7 @@ void setup()
   WiFi.mode(WIFI_STA);
   
   /* Put your WIFI Name and Password here */
-  WiFiMulti.addAP("iot", "project1234");
+  WiFiMulti.addAP("GOVIND", "12345678");
 
   /* Set BUZZER as OUTPUT */
   pinMode(BUZZER, OUTPUT);
